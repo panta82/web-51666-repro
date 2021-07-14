@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2015",
     "module": "commonjs",
     "declaration": true,
     "outDir": "./dist",
     "strict": false,
     "noImplicitAny": false,
-		"sourceMap": true
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/"
+  },
+  "ts-node": {
+    "files": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
