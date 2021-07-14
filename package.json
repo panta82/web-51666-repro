@@ -1,0 +1,39 @@
+{
+  "name": "web-51666-repro",
+  "version": "0.0.1",
+  "description": "Project web-51666-repro",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc",
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "lint": "eslint ./src"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "import-sort-style-module": "^6.0.0",
+    "jest": "^27.0.6",
+    "prettier": "latest",
+    "prettier-plugin-import-sort": "0.0.7",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "importSort": {
+    ".ts, .tsx": {
+      "style": "module",
+      "parser": "typescript"
+    },
+    ".js, .jsx": {
+      "style": "module"
+    }
+  }
+}
